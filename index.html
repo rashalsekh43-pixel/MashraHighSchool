@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mashra High School (মাসড়া উচ্চ বিদ্যালয়) — a responsive school website featuring academics, facilities, notices, gallery, and contact information."
+    />
+    <title>Mashra High School | মাসড়া উচ্চ বিদ্যালয়</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./school-data.js" defer></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="#top" aria-label="Mashra High School home">
+          <img class="logo-mark" src="./logo.png" alt="Mashra High School logo" />
+          <div class="brand-copy">
+            <span class="school-bengali">মাসড়া উচ্চ বিদ্যালয়</span>
+            <span class="school-english">MASHRA HIGH SCHOOL</span>
+            <small>EST. 1970</small>
+          </div>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#top" class="active">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#academics">Academics</a>
+          <a href="#facilities">Facilities</a>
+          <a href="#notices">Notices</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="dock-wrap">
+      <nav class="floating-dock" aria-label="Quick navigation" role="navigation">
+        <a href="#top" class="active">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false"><path d="M12 3.2 3 11.5h2.6V20h5.2v-5.3h2.4V20h5.2v-8.5H21L12 3.2Z"/></svg>
+          </span>
+          <span>Home</span>
+        </a>
+        <a href="#about">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false"><path d="M12 2.8a5.1 5.1 0 1 1 0 10.2A5.1 5.1 0 0 1 12 2.8Zm-7 17.2c.5-3.3 3.6-5.8 7-5.8s6.5 2.5 7 5.8H5Z"/></svg>
+          </span>
+          <span>About</span>
+        </a>
+        <a href="#academics">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false"><path d="M4 6.7A2.7 2.7 0 0 1 6.7 4h10.6A2.7 2.7 0 0 1 20 6.7v10.6A2.7 2.7 0 0 1 17.3 20H6.7A2.7 2.7 0 0 1 4 17.3V6.7Zm2 1.6h12v9.4H6V8.3Zm2.3 1.7h7.4v1.7H8.3v-1.7Zm0 3.1h7.4v1.7H8.3v-1.7Z"/></svg>
+          </span>
+          <span>Academics</span>
+        </a>
+        <a href="#facilities">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false"><path d="M20 7.5c0-1.8-1.7-3.2-3.8-3.2h-8.4C6.7 4.3 5 5.7 5 7.5v9c0 1.8 1.7 3.2 3.8 3.2h8.4c2.1 0 3.8-1.4 3.8-3.2v-9Zm-8.3 2.1h4.6v1.7h-4.6V9.6Zm0 3.3h7.1v1.7h-7.1v-1.7Z"/></svg>
+          </span>
+          <span>Facilities</span>
+        </a>
+        <a href="#notices">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7A2.5 2.5 0 0 1 17.5 16H9l-5 4v-13.5Zm2.5-.5a.5.5 0 0 0-.5.5v7c0 .3.2.5.5.5h11a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.5-.5h-11Zm1.7 2.2h7.6v1.7H8.2V8.2Zm0 3.2h5.6v1.7H8.2v-1.7Z"/></svg>
+          </span>
+          <span>Notices</span>
+        </a>
+      </nav>
+    </div>
+
+    <main id="top">
+      <section class="hero" aria-label="School hero section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">ESTABLISHED IN 1970</p>
+            <h1>MASHRA HIGH SCHOOL</h1>
+            <h2>মাসড়া উচ্চ বিদ্যালয়</h2>
+            <p class="lead">Empowering Young Minds Through Education</p>
+            <p class="summary">
+              A school serving its local community through education, learning, and student development.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#about">Explore Our School</a>
+              <a class="btn btn-secondary" href="#notices">Latest Notices</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro">
+        <div class="container">
+          <div class="section-heading small-gap">
+            <p class="eyebrow dark">School profile</p>
+            <h3>Building a strong future through quality learning</h3>
+          </div>
+          <div class="quick-links" id="quick-links"></div>
+        </div>
+      </section>
+
+      <section id="about" class="section section-panel">
+        <div class="container two-column">
+          <div>
+            <p class="eyebrow dark">About us</p>
+            <h3>Mashra High School</h3>
+            <p class="description">
+              Mashra High School is a co-educational school serving the Mashra area of Rampurhat-I,
+              Birbhum, West Bengal. The school is established in 1970 and functions within the local
+              community context. The details below are compiled from the provided school directory and
+              should be confirmed with school administration for any official use.
+            </p>
+            <ul class="check-list">
+              <li>Directory-reported profile and facilities</li>
+              <li>Community-based education and student development</li>
+              <li>Administrative review recommended for final verification</li>
+            </ul>
+          </div>
+          <div class="info-card">
+            <h4>School information</h4>
+            <div id="info-table" class="info-table"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="academics" class="section alt-bg">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow dark">Academics</p>
+            <h3>Learning pathways for students</h3>
+          </div>
+          <div class="academics-grid">
+            <article class="mini-panel">
+              <h4>Classes offered</h4>
+              <p id="classes-offered">To be verified</p>
+            </article>
+            <article class="mini-panel">
+              <h4>Medium of instruction</h4>
+              <p id="medium-of-instruction">To be verified</p>
+            </article>
+            <article class="mini-panel">
+              <h4>Board affiliation</h4>
+              <p id="board-affiliation">To be verified</p>
+            </article>
+            <article class="mini-panel wide-panel">
+              <h4>Subjects and structure</h4>
+              <ul id="subjects-list" class="subject-list"></ul>
+            </article>
+            <article class="mini-panel wide-panel">
+              <h4>Examination information</h4>
+              <p id="exam-info">To be verified.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="facilities" class="section section-panel">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow dark">Facilities</p>
+            <h3>Resources supporting learning</h3>
+          </div>
+          <div id="facility-list" class="facility-list"></div>
+        </div>
+      </section>
+
+      <section id="notices" class="section alt-bg">
+        <div class="container">
+          <div class="section-heading notice-title-row">
+            <div>
+              <p class="eyebrow dark">Notices</p>
+              <h3>School notice board</h3>
+            </div>
+          </div>
+
+          <div class="notice-toolbar">
+            <label class="search-box" aria-label="Search notices">
+              <span>Search</span>
+              <input id="notice-search" type="search" placeholder="Search notice titles or categories" />
+            </label>
+            <label class="filter-box" aria-label="Filter notices by category">
+              <span>Category</span>
+              <select id="notice-category">
+                <option value="All">All</option>
+              </select>
+            </label>
+          </div>
+
+          <div id="notices-list" class="notice-list" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section section-panel">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow dark">Gallery</p>
+            <h3>Campus moments and school life</h3>
+          </div>
+          <div id="gallery-grid" class="gallery-grid"></div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-grid">
+          <div>
+            <p class="eyebrow dark">Contact</p>
+            <h3>Get in touch with the school</h3>
+            <p class="description">
+              School contact details and office timings should be confirmed through the administrative office.
+            </p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-item">
+              <span class="label">School name</span>
+              <strong>Mashra High School</strong>
+            </div>
+            <div class="contact-item">
+              <span class="label">Address</span>
+              <strong>Mashra, Rampurhat-I, Birbhum, West Bengal, India</strong>
+            </div>
+            <div class="contact-item">
+              <span class="label">PIN code</span>
+              <strong>731216</strong>
+            </div>
+            <div class="contact-item">
+              <span class="label">Email</span>
+              <strong><a href="mailto:126mashrahs@gmail.com">126mashrahs@gmail.com</a></strong>
+            </div>
+            <div class="contact-item">
+              <span class="label">Headmaster (directory-listed)</span>
+              <strong>Debjit Sarkar</strong>
+            </div>
+            <div class="contact-item">
+              <span class="label">UDISE code</span>
+              <strong>19081206902</strong>
+            </div>
+          </div>
+        </div>
+        <div class="container map-preview">
+          <div class="map-preview-heading">
+            <div>
+              <p class="eyebrow dark">Find us</p>
+              <h4>Mashra High School on the map</h4>
+            </div>
+            <a
+              class="map-directions"
+              href="https://www.google.com/maps/place/Mashra+High+School/@24.132332,87.6732507,17z/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open in Google Maps
+            </a>
+          </div>
+          <iframe
+            class="map-frame"
+            src="https://maps.google.com/maps?q=24.132332,87.6732507&z=17&output=embed"
+            title="Map showing Mashra High School"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <strong>MASHRA HIGH SCHOOL</strong>
+          <span>মাশরা উচ্চ বিদ্যালয়</span>
+        </div>
+        <p>Information presented here should be verified with the school office before use as official records.</p>
+        <div class="footer-credit">
+          <a href="https://rashal-dev.pages.dev" target="_blank" rel="noopener noreferrer">Contact Dev</a>
+          <span>Developed by Rashal Sekh</span>
+        </div>
+      </div>
+    </footer>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <button class="lightbox-close" type="button" aria-label="Close image view">×</button>
+      <img src="" alt="School gallery view" />
+    </div>
+  </body>
+</html>

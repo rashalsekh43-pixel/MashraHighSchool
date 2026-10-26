@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Published school notices from Mashra High School." />
+    <title>School Notices | Mashra High School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/admin.css" />
+    <script src="/public-notices.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="/" aria-label="Mashra High School home">
+          <img class="logo-mark" src="/logo.png" alt="" />
+          <div class="brand-copy">
+            <span class="school-bengali">মাশরা উচ্চ বিদ্যালয়</span>
+            <span class="school-english">MASHRA HIGH SCHOOL</span>
+            <small>EST. 1970</small>
+          </div>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="/">Home</a>
+          <a href="/#about">About Us</a>
+          <a href="/#notices" class="active">Notices</a>
+        </nav>
+        <a class="btn btn-primary" href="/">Back to school site</a>
+      </div>
+    </header>
+    <main class="admin-main section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow dark">Mashra High School</p>
+          <h1>School notices</h1>
+          <p class="description">Published announcements and updates, newest first.</p>
+        </div>
+        <div id="public-notices-message" class="notice-empty" role="status" aria-live="polite">Loading notices…</div>
+        <div id="public-notices-list" class="notice-list" aria-live="polite"></div>
+      </div>
+    </main>
+    <dialog id="notice-dialog" class="notice-dialog" aria-labelledby="detail-title">
+      <div class="notice-dialog-head">
+        <div>
+          <span id="detail-category" class="notice-category"></span>
+          <p id="detail-date" class="notice-date"></p>
+        </div>
+        <button id="detail-close" class="icon-button" type="button" aria-label="Close notice details">×</button>
+      </div>
+      <h2 id="detail-title"></h2>
+      <p id="detail-content" class="notice-detail-content"></p>
+      <a id="detail-attachment" class="btn btn-primary" hidden>Download PDF</a>
+    </dialog>
+    <footer class="site-footer">
+      <div class="container footer-inner"><strong>MASHRA HIGH SCHOOL</strong><a href="/">Return to school website</a></div>
+    </footer>
+  </body>
+</html>
