@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Server Error | Mashra High School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        font-family: Inter, Arial, sans-serif;
+        color: #fff;
+        background: #101432;
+      }
+
+      .server-error-page {
+        position: relative;
+        isolation: isolate;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+        padding: 32px 20px;
+        background: linear-gradient(135deg, #17194a 0%, #3b1b70 48%, #9c286c 100%);
+      }
+
+      .server-error-page::before,
+      .server-error-page::after {
+        position: absolute;
+        z-index: -1;
+        width: 360px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        content: "";
+        filter: blur(2px);
+      }
+
+      .server-error-page::before {
+        top: -150px;
+        left: -100px;
+        background: radial-gradient(circle, rgba(255, 207, 82, 0.72), rgba(255, 135, 76, 0));
+      }
+
+      .server-error-page::after {
+        right: -100px;
+        bottom: -180px;
+        background: radial-gradient(circle, rgba(58, 224, 222, 0.65), rgba(99, 99, 255, 0));
+      }
+
+      .server-error-card {
+        position: relative;
+        width: min(100%, 560px);
+        padding: clamp(34px, 7vw, 62px) clamp(24px, 7vw, 58px);
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        border-radius: 30px;
+        background: rgba(255, 255, 255, 0.13);
+        box-shadow: 0 28px 90px rgba(12, 8, 43, 0.38);
+        -webkit-backdrop-filter: blur(18px);
+        backdrop-filter: blur(18px);
+        text-align: center;
+      }
+
+      .server-error-code {
+        display: inline-flex;
+        margin: 0 0 22px;
+        padding: 8px 14px;
+        border: 1px solid rgba(255, 255, 255, 0.32);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.13);
+        color: #ffe28a;
+        font-size: 0.85rem;
+        font-weight: 800;
+        letter-spacing: 0.16em;
+      }
+
+      .server-error-card h1 {
+        margin: 0;
+        background: linear-gradient(90deg, #fff4ad, #fff, #9df9f3);
+        background-clip: text;
+        color: transparent;
+        font-size: clamp(2.6rem, 10vw, 4.6rem);
+        font-weight: 800;
+        letter-spacing: -0.07em;
+        line-height: 1;
+      }
+
+      .server-error-card p:not(.server-error-code) {
+        max-width: 380px;
+        margin: 20px auto 30px;
+        color: rgba(255, 255, 255, 0.83);
+        font-size: 1.05rem;
+        line-height: 1.7;
+      }
+
+      .server-error-home {
+        display: inline-flex;
+        min-height: 52px;
+        align-items: center;
+        justify-content: center;
+        padding: 0 24px;
+        border-radius: 999px;
+        background: linear-gradient(100deg, #ffcb68, #ff7e79);
+        box-shadow: 0 10px 28px rgba(255, 126, 121, 0.28);
+        color: #311644;
+        font-weight: 800;
+        text-decoration: none;
+        transition: transform 180ms ease, box-shadow 180ms ease;
+      }
+
+      .server-error-home:hover,
+      .server-error-home:focus-visible {
+        transform: translateY(-2px);
+        box-shadow: 0 14px 34px rgba(255, 126, 121, 0.4);
+      }
+
+      .server-error-home:focus-visible {
+        outline: 3px solid #fff;
+        outline-offset: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="server-error-page">
+      <section class="server-error-card" aria-labelledby="server-error-title">
+        <p class="server-error-code">500 · ADMIN PANEL</p>
+        <h1 id="server-error-title">SERVER ERROR</h1>
+        <p>The admin panel is temporarily unavailable. Please try again later.</p>
+        <a class="server-error-home" href="/">Return to school website</a>
+      </section>
+    </main>
+  </body>
+</html>
