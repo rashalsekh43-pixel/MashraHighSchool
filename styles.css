@@ -173,6 +173,22 @@ select {
   background: linear-gradient(90deg, var(--primary-700), var(--accent));
 }
 
+.main-nav a.admin-nav-link {
+  background: var(--primary-700);
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(13, 45, 86, 0.18);
+}
+
+.main-nav a.admin-nav-link:hover,
+.main-nav a.admin-nav-link:focus-visible {
+  background: var(--primary-900);
+  color: #fff;
+}
+
+.main-nav a.admin-nav-link.active::after {
+  display: none;
+}
+
 .menu-toggle {
   display: none;
   background: rgba(255,255,255,0.3);
