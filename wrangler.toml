@@ -5,7 +5,7 @@ pages_build_output_dir = "."
 [[d1_databases]]
 binding = "DB"
 database_name = "mhs-notices"
-database_id = "REPLACE_WITH_D1_DATABASE_ID"
+database_id = "f8410433-ca75-408b-8882-d20321423ea9"
 migrations_dir = "migrations"
 
 [[r2_buckets]]
